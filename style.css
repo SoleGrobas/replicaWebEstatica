@@ -1,1 +1,241 @@
+*{
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+	}
+
+    
+body {
+        line-height: 1;
+        font-family: 'Open Sans';
+        max-width: 1200px;
+        background-color: rgb(243, 246, 248);
+    }
+main{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 100px 0;
+        height: auto;
+    }    
+
+header{
+    
+    width: 80%;
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(243, 246, 248);
+    max-width: 1200px;
+    
+}
+
+.logo{
+    width: 20%;
+    height: 40%;
+}
+
+.row{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+
+}
+
+.nav-link{
+    margin: 2em;
+    text-decoration: none;
+    color: black;
+    
+}
+.nav-link:hover{
+    color: rgb(243, 82, 82)
+}
+
+#buttom1{
+    text-decoration: none;
+    color: rgb(243, 82, 82);
+    border-style: solid;
+    border-color: rgb(243, 82, 82);
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+#buttom1:hover{
+    color:black;
+}
+
+#introduction{
+    margin-top: 15em;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 475%;
+}
+
+p.intro{
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: 2em;
+    font-size: 150%;
+}
+
+#download{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    gap: 20px;
+}
+
+.buttom2{
+    background-color: rgb(243, 82, 82);
+    border-style: solid;
+    border-color: rgb(243, 82, 82);
+    border-radius: 20px;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    justify-content: center;
+    color: white;
+    display: inline-flex;
+}
+
+.buttom-icon{
+    width: 12.99px;
+    height: 18.99px;
+    
+}
+
+.buttom3{
+    background-color: rgb(243, 82, 82);
+    border-style: solid;
+    border-color: rgb(243, 82, 82);
+    border-radius: 20px;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    justify-content: center;
+    color: white;
+    display: inline-flex;
+}
+
+.buttom-icon-arrow{
+    width: 12.99px;
+    height: 18.99px;
+}
+
+
+.img-introduction{
+    width: 70%;
+    height: auto;
+    margin-top: 10%;
+}
+
+#five-icons{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    gap: 5%;
+   
+}
+
+.icon-one, .icon-two, .icon-three, .icon-four, .icon-five{
+    width: 20%;
+    height: auto;
+}
+
+.icon-one-img, .icon-two-img, .icon-three-img, .icon-four-img, .icon-five-img{
+width: 6rem;
+height: 15rem;
+}
+.one{
+    background-color: rgb(230, 168, 242);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+ 
+    
+
+}
+.two{
+    background-color: rgb(175, 244, 201);
+    border-radius: 50%;
+}
+
+.three{
+    background-color: rgb(254, 198, 235);
+    border-radius: 50%;
+}
+.four{
+    background-color: rgb(248, 252, 170);
+    border-radius: 50%;
+}
+.five{
+    background-color: rgb(199, 208, 247);
+    border-radius: 50%;
+}
+/*
+
+@-ms-viewport {
+        width: device-width;
+    }
+    
+html {
+        box-sizing: border-box;
+    }
+
+}*/
+
+
+
+/*
+.nav-link{
+    display: flex;
+    color:black;
+    padding: 10px 30px;
+    text-decoration: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    justify-content: center;
+    
+}
+
+.nav-link: hover{
+/*EFECTO BRILLO*/
+}
+
+/*#introduction{
+    position: relative;
+    top: 100px;
+    
+}
+
+
 
