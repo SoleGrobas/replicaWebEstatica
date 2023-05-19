@@ -13,21 +13,19 @@
     <main>
         <header class="container">
             <div class="logo"><img src="./resources/images/logo.svg"></div>
-            <nav>
-                <ul class="row">
-                    <li><a href="#descrition" class="nav-link">DESCRIPTION</a></li>
-                    <li><a href="#features" class="nav-link">FEATURES</a></li>
-                    <li><a href="#screens" class="nav-link">SCREENS</a></li>
-                    <li><a href="#extra" class="nav-link">EXTRA</a>
-                        <ul>
-                            <li>ARTICLE DETAILS</li>
-                            <li>TERMS CONDITIONS</li>
-                            <li>PRIVACY POLICY</li>
-                        </ul>
-                    </li>
-                    <li><a href="#download" class="nav-link" id="buttom1">DOWNLOAD</a></li>
-                </ul>
-          
+            <input type="checkbox" id="check">
+                <label for="check" class="show-menu">
+                    &#8801
+                </label>
+            <nav class="menu">
+                <a href="#">DESCRIPTION</a>
+                <a href="#">FEATURES</a>
+                <a href="#pinocho" alt="click me">SCREENS</a>
+                <a href="#">EXTRA <img src="resources\images\arrow-right.svg>"></a>
+                <a href="https://factoriaf5.org/" id="dropdown">DOWNLOAD</a>
+                <label for="check" class="hide-menu">
+                    &#215
+                </label>
             </nav>
            
         </header>
@@ -39,7 +37,7 @@
             <div id="download">
                 <div class="buttom2">
                     <img src="resources\images\baseline-apple.svg" class="buttom-icon">
-                    <p>DOWNLOAD</p>
+                    <button>DOWNLOAD</button>
                 </div>
                 <div class="buttom3">
                     <img src="resources\images\arrow-right.svg" class="buttom-icon-arrow">
@@ -48,25 +46,25 @@
             </div>
             <img src="resources\images\header-iphone.png" class="img-introduction">
             <div id="five-icons">
-                <div class="icon-one">
-                    <div class="one"><img src="resources\images\users.svg" class="icon-one-img"></div>
-                    <p>Identify Goals</p>
+                <div class="icon">
+                    <div class="icon-one"><img src="resources\images\users.svg" class="icon-img"></div>
+                    <p id="p-icon">Identify Goals</p>
                 </div>
-                <div class="icon-two">
-                    <div class="two"><img src="resources\images\code.svg" class="icon-two-img"></div>
-                    <p>Situation Analysis</p>
+                <div class="icon">
+                    <div class="icon-two"><img src="resources\images\code.svg" class="icon-img"></div>
+                    <p id="p-icon">Situation Analysis</p>
                 </div>
-                <div class="icon-three">
-                    <div class="three"><img src="resources\images\settings.svg"class="icon-three-img"></div>
-                    <p>Tasks Settings</p>
+                <div class="icon">
+                    <div class="icon-three"><img src="resources\images\settings.svg"class="icon-img"></div>
+                    <p id="p-icon">Tasks Settings</p>
                 </div>
-                <div class="icon-four">
-                    <div class="four"><img src="resources\images\chat.svg" class="icon-four-img"></div>
-                    <p>Social Interaction</p>
+                <div class="icon">
+                    <div class="icon-four"><img src="resources\images\chat.svg" class="icon-img"></div>
+                    <p id="p-icon">Social Interaction</p>
                 </div>
-                <div class="icon-five">
-                    <div class="five"><img src="resources\images\space-shuttle.svg" class="icon-four-img"></div>
-                    <p>Get Things Done</p>
+                <div class="icon">
+                    <div class="icon-five"><img src="resources\images\space-shuttle.svg" class="icon-img"></div>
+                    <p id="p-icon">Get Things Done</p>
                 </div>
             </div>
         </section>
@@ -75,7 +73,37 @@
 
         <section id="features"></section>
 
-        <section id="screens"></section>
+        <section id="pinocho">
+
+            <div id="five-icons">
+                <div class="icon">
+                    <div class="icon-one-num"><img src="resources\images\users.svg" class="icon-img"></div>
+                    <p id="p-icon2">231</p>
+                    <p id="p-icon3">Happy Users</p>
+                </div>
+                <div class="icon">
+                    <div class="icon-two-num"><img src="resources\images\code.svg" class="icon-img"></div>
+                    <p id="p-icon2">385</p>
+                    <p id="p-icon3">Issues Solved</p>
+                </div>
+                <div class="icon">
+                    <div class="icon-three-num"><img src="resources\images\settings.svg"class="icon-img"></div>
+                    <p id="p-icon2">159</p>
+                    <p id="p-icon3">Good Reviews</p>
+                </div>
+                <div class="icon">
+                    <div class="icon-four-num"><img src="resources\images\chat.svg" class="icon-img"></div>
+                    <p id="p-icon2">127</p>
+                    <p id="p-icon3">Case Studies</p>
+                </div>
+                <div class="icon">
+                    <div class="icon-five-num"><img src="resources\images\space-shuttle.svg" class="icon-img"></div>
+                    <p id="p-icon2">211</p>
+                    <p id="p-icon3">Orders Received</p>
+                </div>
+            </div>
+
+        </section>
 
         <section id="extra"></section>
     </main>

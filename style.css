@@ -1,13 +1,13 @@
 *{
     margin: 0;
 	padding: 0;
+    font-family: 'Open Sans';
     box-sizing: border-box;
 	}
 
     
 body {
         line-height: 1;
-        font-family: 'Open Sans';
         max-width: 1200px;
         background-color: rgb(243, 246, 248);
     }
@@ -20,23 +20,77 @@ main{
     }    
 
 header{
-    
     width: 80%;
     position: fixed;
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     background-color: rgb(243, 246, 248);
-    max-width: 1200px;
-    
 }
 
 .logo{
-    width: 20%;
-    height: 40%;
+    width: 10%;
+    height: 20%;
 }
 
+
+.menu a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.show-menu, .hide-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.show-menu{
+    order: 1;
+}
+
+.menu a:hover, .show-menu:hover, .hide-menu:hover{
+    color: rgb(243, 82, 82);
+}
+#check{
+    display: none;
+}
+/*RESPONSIVE*/
+@media(max-width: 768px){
+    .show-menu,
+    .hide-menu{display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(243, 246, 248);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 15px;
+    }
+    .hide-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+}
+
+/*
 .row{
     display: flex;
     flex-flow: row;
@@ -70,10 +124,30 @@ header{
     padding-right: 10px;
     
 }
+
+#dropdown{
+/*cursor: pointer;CREO QUE VA EN NAVEGADOR*//*
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block;
+}
+#dropdown:hover .dropdown-content{
+    display: block;
+  }
+
 #buttom1:hover{
     color:black;
 }
-
+*/
 #introduction{
     margin-top: 15em;
     text-align: center;
@@ -84,17 +158,17 @@ h1{
     font-size: 475%;
 }
 
-p.intro{
+.intro{
     margin-right: 4em;
     margin-left: 4em;
     margin-top: 2em;
     font-size: 150%;
+    color:rgb(94, 93, 93);
 }
 
 #download{
     display: flex;
     flex-flow: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
@@ -140,7 +214,7 @@ p.intro{
 }
 
 .buttom-icon-arrow{
-    width: 12.99px;
+    width: 15.99px;
     height: 18.99px;
 }
 
@@ -149,57 +223,144 @@ p.intro{
     width: 70%;
     height: auto;
     margin-top: 10%;
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+  }
+  
 
 #five-icons{
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     list-style: none;
     font-weight: bold;
     justify-content: space-evenly;
     margin-top: 2em;
     gap: 5%;
+}
+
+.icon{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-img{
+    width: 5rem;
+    height: 6rem;
+    
+}
+
+.icon-one{
+    background-color: rgb(230, 168, 242);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: icon-one 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: icon-one 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes icon-one{
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes icon-one {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+.icon-two{
+    background-color: rgb(175, 244, 201);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: icon-one 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: icon-one 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.icon-three{
+    background-color: rgb(254, 198, 235);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: icon-one 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: icon-one 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.icon-four{
+    background-color: rgb(248, 252, 170);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: icon-one 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: icon-one 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.icon-five{
+    background-color: rgb(199, 208, 247);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: icon-one 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: icon-one 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+#pinocho{
+    background-color: rgb(219, 229, 244);
+    height: 50%;
+    margin-top: 20%;
+    padding-top: 12%;
+    padding-bottom: 15%;
    
 }
 
-.icon-one, .icon-two, .icon-three, .icon-four, .icon-five{
-    width: 20%;
-    height: auto;
-}
-
-.icon-one-img, .icon-two-img, .icon-three-img, .icon-four-img, .icon-five-img{
-width: 6rem;
-height: 15rem;
-}
-.one{
-    background-color: rgb(230, 168, 242);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
- 
+#p-icon2{
+    font-size: 60px;
+    justify-content: center;
+   
     
+}
+#p-icon3{
+    font-size: 14px;
+    justify-content: center;
+    color: rgb(94, 93, 93);
+}
 
-}
-.two{
-    background-color: rgb(175, 244, 201);
-    border-radius: 50%;
-}
 
-.three{
-    background-color: rgb(254, 198, 235);
-    border-radius: 50%;
-}
-.four{
-    background-color: rgb(248, 252, 170);
-    border-radius: 50%;
-}
-.five{
-    background-color: rgb(199, 208, 247);
-    border-radius: 50%;
-}
 /*
 
 @-ms-viewport {
